@@ -1,0 +1,24 @@
+body:not(.hideAllSwipeButtons) .mes[data-user-swipes="enabled"] :is(.swipes-counter, .swipe_right) {
+    opacity: 0.3 !important;
+    visibility: visible !important;
+    pointer-events: auto !important;
+    interactivity: auto;
+}
+
+body:not(.hideAllSwipeButtons) .mes[data-user-swipes="enabled"][data-user-swipes-left="true"] .swipe_left {
+    opacity: 0.3 !important;
+    visibility: visible !important;
+    pointer-events: auto !important;
+    interactivity: auto;
+}
+
+.mes[data-user-swipes="enabled"][data-user-last-swipe="true"] :is(.swipes-counter, .swipe_right) {
+    opacity: 0.7 !important;
+}
+
+.mes[data-user-swipes="enabled"][data-user-swipes-left="false"] .swipe_left {
+    opacity: 0 !important;
+    visibility: hidden !important;
+    pointer-events: none !important;
+    interactivity: inert;
+}
